@@ -1,0 +1,99 @@
+.section2, 
+.section4, 
+.section6, 
+.section8 {
+    background-color: #2E2E2E;
+}
+.broker-banner {
+    background-color: #004387;
+    text-align: center;
+    overflow: hidden;
+}
+.section1 {
+    text-align: center;
+}
+.section6,
+.section8 {
+    color: white;
+}
+button {
+    margin-top: 30px;
+}
+@media only screen and (min-width: 2000px) {
+    .table {
+        background-color: #2E2E2E;
+        color: white;
+        margin-left: 600px;
+        margin-right: 600px;
+        border-radius: 8px;
+    }
+    h3 {
+        padding-top: 30px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .fa-circle-check {
+        color: limegreen;
+    }
+    .vorteile {
+        display: flex;
+    }
+    .num1,
+    .num2 {
+        text-align: start;
+        margin-left: 300px;
+        padding-bottom: 30px;
+        font-size: 1rem;
+    }
+    .num2 {
+        margin-left: 50px;
+    }
+    .num3 {
+        margin-left: 150px;
+    }
+    .num4 {
+        text-align: start;
+        margin-left: 430px;
+    }
+    .num5 {
+        text-align: start;
+        margin-left: 200px;
+    }
+    .text {
+        text-align: start;
+        margin: 40px 600px;
+    }
+    .black {
+        color: white;
+        padding-bottom: 40px;
+    }
+    .less-space {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .img {
+        text-align: center;
+        margin-left: 600px;
+        margin-right: 600px;
+    }
+    img {
+        max-width: 1050px;
+    }
+    .btn {
+        text-align: center;
+    }
+    .button {
+        padding: 5px 30px;
+    }
+    .smaller {
+        height: 400px;
+    }
+    .bottom {
+        padding-bottom: 50px;
+    }
+    .ftr {
+        margin-top: -20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+}

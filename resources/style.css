@@ -1,0 +1,734 @@
+html {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-image: url(./images/bg-hero.webp);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+/* Max Width 480px */
+
+@media only screen and (max-width: 480px) {
+
+    /* Logo Section */
+
+    .logo-container {
+        background-color: black;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+    .logo {
+        height: 31px;
+    }
+
+    /* Banner Section */
+    .blackbull,
+    .xtb,
+    .admiral-markets-blurred,
+    .admiral-market-left,
+    .blackbull-left,
+    .xtb-left,
+    .etoro,
+    .etoro-left,
+    .plus500,
+    .plus500-left {
+        position: absolute;
+        visibility: hidden;
+        height: 1px;
+        width: 1px;
+    }
+    .banner-section {
+        max-height: 800px;
+        text-align: center;
+    }
+    .banner-headline {
+        margin-top: 50px;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    .banner-sub {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 0.875rem;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .button {
+        margin-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom right, #5476D9, #39C5DB);
+        color: white;
+        border: none;
+    }
+
+    /* Broker Section */
+
+    .alle-broker {
+        margin-top: 30px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .summary {
+        width: 300px;
+        height: 200px;
+        color: white;
+        background-image: linear-gradient(to bottom right, #5476D9, #39C5DB);
+        border-radius: 15px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        padding-top: 0;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards {
+        position: absolute;
+        visibility: hidden;
+        height: 1px;
+        width: 1px;
+    }
+    .top-card {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .top-card-img {
+        width: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .invisible {
+        position: absolute;
+        visibility: hidden;
+    }
+    h2 {
+        padding-top: 15px;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .rating {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .flex {
+        line-height: 2;
+        margin-top: 10px;
+    }
+    .feature {
+        margin-right: 30px;
+        margin-top: 2px;
+        margin-bottom: 0;
+        padding-top: 3px;
+    }
+    .risk-warning {
+        color: white;
+        padding-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 10px;
+    }
+    li {
+        padding-right: 30px;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+}
+
+
+/* Small Screens */
+
+@media only screen and (min-width: 481px) and (max-width: 649px) {
+
+    /* Logo Section */
+
+    .logo-container {
+        background-color: black;
+        width: 100vw;
+        height: 40px;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        outline: 1px solid black;
+    }
+    .logo {
+        height: 31px;
+        outline: 1px solid black;
+    }
+
+    /* Banner Section */
+    .blackbull,
+    .xtb,
+    .admiral-markets-blurred,
+    .admiral-market-left,
+    .blackbull-left,
+    .xtb-left,
+    .etoro,
+    .etoro-left,
+    .plus500,
+    .plus500-left {
+        position: absolute;
+        visibility: hidden;
+    }
+    .banner-section {
+        max-height: 800px;
+        text-align: center;
+        outline: 1px solid black;
+    }
+    .banner-headline {
+        margin-top: 50px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        outline: 1px solid black;
+    }
+    .banner-sub {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 0.875rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        outline: 1px solid black;
+    }
+    .button {
+        /* grid-row-start: 9;
+        grid-column: 7 / 10; */
+        margin-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom right, #5476D9, #39C5DB);
+        color: white;
+        border: none;
+        outline: 1px solid black;
+    }
+
+    /* Broker Section */
+
+    .alle-broker {
+        margin-top: 30px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        outline: 1px solid black;
+    }
+    .summary {
+        width: 500px;
+        height: 230px;
+        color: white;
+        background-image: linear-gradient(to bottom right, lightgray, black);
+        border-radius: 15px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        padding-top: 0;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        outline: 1px solid black;
+    }
+    .cards {
+        position: absolute;
+        visibility: hidden;
+    }
+    .top-card {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        outline: 1px solid black;
+    }
+    .top-card-img {
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        outline: 1px solid black;
+    }
+    .invisible {
+        position: absolute;
+        visibility: hidden;
+    }
+    h2 {
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: center;
+        text-transform: uppercase;
+        outline: 1px solid black;
+    }
+    .rating {
+        text-align: right;
+        padding-right: 10px;
+        outline: 1px solid black;
+    }
+    .flex {
+        line-height: 2;
+        margin-top: 10px;
+        outline: 1px solid black;
+    }
+    .feature {
+        margin-right: 30px;
+        margin-top: 2px;
+        margin-bottom: 0;
+        padding-top: 3px;
+        outline: 1px solid black;
+    }
+    .risk-warning {
+        color: white;
+        padding-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 14px;
+    }
+    li {
+        padding-right: 25px;
+        justify-content: space-between;
+        text-decoration: underline;
+    }
+}
+
+/* 650px - 1209px Screens */
+
+@media only screen and (min-width: 650px) and (max-width: 1209px) {
+
+    /* Logo Section */
+
+    .logo-container {
+        background-color: black;
+        width: 100vw;
+        height: 40px;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+    .logo {
+        height: 31px;
+    }
+
+    /* Banner Section */
+    .blackbull,
+    .xtb,
+    .admiral-markets-blurred,
+    .admiral-market-left,
+    .blackbull-left,
+    .xtb-left,
+    .etoro,
+    .etoro-left,
+    .plus500,
+    .plus500-left {
+        position: absolute;
+        visibility: hidden;
+    }
+    .banner-section {
+        /* border: 1px solid black; */
+        /* width: 100%; */
+        max-height: 800px;
+        text-align: center;
+    }
+    .banner-headline {
+        margin-top: 50px;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .banner-headline:hover {
+        animation-duration: 300ms;
+        background-image: linear-gradient(90deg, #5476D9, #39C5DB);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; 
+    }
+    .banner-sub {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 1rem;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .button {
+        /* grid-row-start: 9;
+        grid-column: 7 / 10; */
+        margin-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom right, #5476D9, #39C5DB);
+        color: white;
+        border: none;
+    }
+
+    /* Broker Section */
+
+    .alle-broker {
+        margin-top: 30px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .summary {
+        width: 500px;
+        height: 230px;
+        color: white;
+        background-image: linear-gradient(to bottom right, #5476D9, #39C5DB);
+        border-radius: 15px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        padding-top: 0;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards {
+        position: absolute;
+        visibility: hidden;
+    }
+    .top-card {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .top-card-img {
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .invisible {
+        position: absolute;
+        visibility: hidden;
+    }
+    h2 {
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .rating {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .flex {
+        line-height: 2;
+        margin-top: 10px;
+    }
+    .feature {
+        margin-right: 30px;
+        margin-top: 2px;
+        margin-bottom: 0;
+        padding-top: 3px;
+    }
+    .risk-warning {
+        color: white;
+        padding-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 14px;
+    }
+    li {
+        padding-right: 25px;
+        justify-content: space-between;
+        text-decoration: underline;
+    }
+}
+
+/* Big Screens */
+
+@media only screen and (min-width: 1210px) {
+
+    /* Logo Section */
+
+    .logo-container {
+        background-color: black;
+        width: 100vw;
+        height: 55px;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .logo {
+        height: 40px;
+    }
+
+    /* Slide in Logo Section */
+    @keyframes slideinleft {
+        from {
+            transform: translateX(-2500px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    .blackbull {
+        grid-row: 2 / 4;
+        grid-column: 12 / 14;
+        animation: slideinleft 400ms ease-in-out 30ms;
+    }
+    .etoro {
+        grid-row: 9 / 11;
+        grid-column: 11 / 13;
+        animation: slideinleft 500ms ease-in-out;
+        border-radius: 20px;
+        z-index: 50;
+    }
+    .xtb {
+        grid-row: 6 / 8;
+        grid-column: 13 / 15;
+        animation: slideinleft 600ms ease-in-out;
+        border-radius: 20px;
+        z-index: 100;
+    }
+    .admiral-markets-blurred {
+        grid-row: 4 / 6;
+        grid-column: 14 / 16;
+        animation: slideinleft 700ms ease-in-out;
+    }
+    .plus500 {
+        grid-row: 8 / 10;
+        grid-column: 13 / 15;
+        animation: slideinleft 800ms ease-in-out;
+    }
+    .admiral-market-left {
+        grid-row: 8 / 10;
+        grid-column: 4 / 6;
+        animation: slideinleft 900ms ease-in-out;
+        border-radius: 20px;
+        z-index: 50;
+    }
+    .blackbull-left {
+        grid-row: 2 / 4;
+        grid-column: 3 / 5;
+        animation: slideinleft 700ms ease-in-out;
+    }
+    .etoro-left {
+        grid-row: 5 / 7;
+        grid-column: 2 / 4;
+        animation: slideinleft 500ms ease-in-out;
+        border-radius: 20px;
+        z-index: 70;
+    }
+    .xtb-left {
+        grid-row: 6 / 8;
+        grid-column: -1 / 0;
+        animation: slideinleft 500ms ease-in-out;
+        overflow: hidden;
+        z-index: 40;
+
+    }
+    .plus500-left {
+        grid-row: 8 / 10;
+        grid-column: 1 / 3;
+        animation: slideinleft 500ms ease-in-out;
+    }
+
+
+    /* Banner Section*/
+    
+    
+    .banner-section {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 800px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(15, 6.67%);
+        grid-template-rows: repeat(12, 8.34%);
+    }
+    .banner-headline {
+        font-size: 32px;
+        font-weight: 400;
+        grid-row: 4 / 5;
+        grid-column: 6 / 11;
+    }
+    .banner-sub {
+        grid-row: 6 / 7;
+        grid-column: 5 / 12;
+        /* border: 1px solid black; */
+    }
+    .button {
+        grid-row-start: 9;
+        grid-column: 7 / 10;
+        max-height: 50px;
+        font-size: 25px;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom right, #5476D9, #39C5DB);
+        color: white;
+        border: none;
+    }
+    .alle-broker {
+        grid-row: 12 / 13;
+        grid-column: 7 / 10;
+        height: 70px;
+        font-weight: 400;
+        font-size: 34px;
+    }
+
+
+    /* Broker Section */
+
+
+    .parentbox {
+        display: grid;
+        /* grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr); */
+        margin-top: 50px;
+        row-gap: 60px;
+        column-gap: 40px;
+    }
+    .summary {
+        width: 600px;
+        height: 225px;
+        color: black;
+        /* background-image: linear-gradient(to bottom right, lightgray, black); */
+        background-color: lightgray;
+        border-radius: 15px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        padding-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .topbox {
+        max-width: 555px;
+        max-height: 217px;
+        padding-bottom: 0;
+    }
+    .cards {
+        border-radius: 15px;
+    }
+    .top-card {
+        position: absolute;
+        visibility: hidden;
+    }
+    h2 {
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .rating {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .flex {
+        line-height: 2;
+        margin-top: 10px;
+    }
+    .feature {
+        margin-right: 30px;
+        margin-top: 2px;
+        margin-bottom: 0;
+        padding-top: 3px;
+    }
+    .risk-warning {
+        color: white;
+        padding-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 14px;
+    }
+    li {
+        padding-right: 25px;
+        justify-content: space-between;
+        text-decoration: underline;
+    }
+}
+i {
+    padding-right: 5px;
+}
+.fa-square-check {
+    color: limegreen;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+@media only screen and (max-width(1500px)) {
+    .box1, 
+.box2, 
+.box3, 
+.box4, 
+.box5, 
+.box6 {
+    max-width: 600px;
+}
+}
+footer {
+    background-image: linear-gradient(black, gray, lightgray, white);
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    /* outline: 1px solid black; */
+}
+.impressum {
+    /* border: 1px solid black; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+    height: 50px;
+    /* outline: 1px solid black; */
+}
+.strong {
+    font-weight: 700;
+}
+li:hover {
+    cursor: pointer;
+}
+.button:hover {
+    cursor: pointer;
+}
+.summary:hover {
+    cursor: pointer;
+}
+
+
+.gradient-text {
+    background-image: linear-gradient(90deg, red, blue);
+    background-clip: text;
+    color: transparent;
+}
