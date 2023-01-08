@@ -19,6 +19,133 @@
 button {
     margin-top: 30px;
 }
+.fa-circle-check {
+    color: limegreen;
+}
+@media only screen and (max-width: 999px) {
+    #table {
+        background-color: #2E2E2E;
+        color: white;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+    }
+    #s-scrn {
+        margin-left: 25%;
+    }
+    #s-scrn2 {
+        margin-left: 20%;
+    }
+    .pltf, 
+    .smaller {
+        max-width: 600px;
+        object-fit: contain;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1139px) {
+    #s-scrn {
+        margin-left: 15%;
+    }
+    #s-scrn2 {
+        margin-left: 20%;
+    }
+    .pltf {
+        max-width: 600px;
+    }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1339px) {
+    #s-scrn {
+        margin-left: 25%;
+    }
+    #s-scrn2 {
+        margin-left: 25%;
+    }
+    #table {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pltf {
+        max-width: 800px;
+    }
+}
+/* Medium Screens */
+@media only screen and (min-width: 480px) and (max-width: 2000px) {
+    .table {
+        background-color: #2E2E2E;
+        color: white;
+        margin-left: 15%;
+        margin-right: 15%;
+        border-radius: 8px;
+    }
+    h3 {
+        padding-top: 30px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .vorteile {
+        display: flex;
+    }
+    .num1 {
+        text-align: start;
+        margin-left: 30%;
+        padding-bottom: 30px;
+        font-size: 1rem;
+    }
+    .num2 {
+        text-align: start;
+        margin-left: 10%;
+        padding-bottom: 30px;
+        font-size: 1rem;
+    }
+    .num3 {
+        margin-left: 20%;
+    }
+    .num4 {
+        text-align: start;
+        margin-left: 40%;
+    }
+    .num5 {
+        text-align: start;
+        margin-left: 20%;
+    }
+    .text {
+        text-align: start;
+        margin: 40px 200px;
+    }
+    .black {
+        color: white;
+        padding-bottom: 40px;
+    }
+    .less-space {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .img {
+        text-align: center;
+    }
+    img {
+        max-width: 1050px;
+    }
+    .btn {
+        text-align: center;
+    }
+    .button {
+        padding: 5px 30px;
+    }
+    .smaller {
+        height: 400px;
+    }
+    .bottom {
+        padding-bottom: 50px;
+    }
+    .ftr {
+        margin-top: -20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+/* Big Screens */
 @media only screen and (min-width: 2000px) {
     .table {
         background-color: #2E2E2E;
@@ -31,9 +158,6 @@ button {
         padding-top: 30px;
         text-decoration: underline;
         text-align: center;
-    }
-    .fa-circle-check {
-        color: limegreen;
     }
     .vorteile {
         display: flex;
