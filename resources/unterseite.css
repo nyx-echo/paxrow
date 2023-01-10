@@ -1,9 +1,3 @@
-.section2, 
-.section4, 
-.section6, 
-.section8 {
-    background-color: #2E2E2E;
-}
 .broker-banner {
     background-color: #004387;
     text-align: center;
@@ -22,19 +16,176 @@ button {
 .fa-circle-check {
     color: limegreen;
 }
+@media only screen and (max-width: 289px) {
+    * {
+        font-size: 12px;
+        overflow: hidden;
+    }
+    .broker-banner {
+        background-size: cover;
+    }
+    .pltf, 
+    .smaller {
+        max-width: 200px !important;
+        object-fit: contain !important;
+    }
+    img {
+        max-height: 100px;
+    }
+    #s-scrn {
+        margin-left: 10% !important;
+    }
+    #s-scrn2,
+    #s-scrn6 {
+        margin-left: 15% !important;
+    }
+    .num5 {
+        margin-left: 5% !important;
+    }
+    .num4 {
+        margin-left: 25% !important;
+    }
+    .num8 {
+        margin-left: 20% !important;
+    }
+    #inv {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        visibility: hidden;
+    }
+    .black {
+        margin-top: 0;
+    }
+    .button, 
+    .btn, 
+    button {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 290px) and (max-width: 425px) {
+    * {
+        font-size: 14px;
+    }
+    .broker-banner {
+        background-size: cover;
+    }
+    .pltf, 
+    .smaller {
+        max-width: 300px !important;
+        object-fit: contain !important;
+    }
+    img {
+        max-height: 150px;
+    }
+    #s-scrn {
+        margin-left: 10% !important;
+    }
+    #s-scrn2,
+    #s-scrn6 {
+        margin-left: 15% !important;
+    }
+    .num5 {
+        margin-left: 5% !important;
+    }
+    .num4 {
+        margin-left: 25% !important;
+    }
+    .num8 {
+        margin-left: 20% !important;
+    }
+    #inv {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        visibility: hidden;
+    }
+    .black {
+        margin-top: 0;
+    }
+    .button {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (min-width: 426px) {
+    #inv1 {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 599px) {
+    * {
+        font-size: 16px;
+    }
+    .broker-banner {
+        background-size: cover;
+    }
+    img {
+        max-height: 200px;
+    }
+    #s-scrn {
+        margin-left: 10% !important;
+    }
+    #s-scrn2,
+    #s-scrn6 {
+        margin-left: 15% !important;
+    }
+    .num5 {
+        margin-left: 5% !important;
+    }
+    .num4 {
+        margin-left: 35% !important;
+    }
+    .pltf, 
+    .smaller {
+        max-width: 400px !important;
+        object-fit: contain !important;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    #s-scrn {
+        margin-left: 15% !important;
+    }
+    #s-scrn2,
+    #s-scrn6 {
+        margin-left: 20% !important;
+    }
+    .num5 {
+        margin-left: 5% !important;
+    }
+    .num4 {
+        margin-left: 35% !important;
+    }
+    .pltf, 
+    .smaller {
+        max-width: 600px;
+        object-fit: contain;
+    }
+}
 @media only screen and (max-width: 999px) {
-    #table {
+    #table1, 
+    #section2, 
+    #section4, 
+    #section6, 
+    #section8 {
         background-color: #2E2E2E;
         color: white;
         margin-left: 0;
         margin-right: 0;
         border-radius: 0;
     }
+    .text {
+        margin: 0 0;
+        padding: 10px 40px;
+    }
     #s-scrn {
         margin-left: 25%;
     }
     #s-scrn2 {
-        margin-left: 20%;
+        margin-left: 25%;
     }
     .pltf, 
     .smaller {
@@ -68,9 +219,25 @@ button {
         max-width: 800px;
     }
 }
+@media only screen and (min-width: 1000px) {
+    .text {
+        margin: 40px 200px;
+        padding: 0 40px 40px 40px;
+    }
+}
 /* Medium Screens */
-@media only screen and (min-width: 480px) and (max-width: 2000px) {
-    .table {
+@media only screen and (max-width: 2000px) {
+    .section2, 
+    .section4, 
+    .section6, 
+    .section8 {
+        background-color: #2E2E2E;
+        color: white;
+        margin-left: 15%;
+        margin-right: 15%;
+        border-radius: 8px;
+    }
+    .table1 {
         background-color: #2E2E2E;
         color: white;
         margin-left: 15%;
@@ -85,14 +252,21 @@ button {
     .vorteile {
         display: flex;
     }
-    .num1 {
+    .num1, 
+    .num2, 
+    .num3, 
+    .num4, 
+    .num5, 
+    .text, 
+    .black {
         text-align: start;
+    }
+    .num1 {
         margin-left: 30%;
         padding-bottom: 30px;
         font-size: 1rem;
     }
     .num2 {
-        text-align: start;
         margin-left: 10%;
         padding-bottom: 30px;
         font-size: 1rem;
@@ -101,20 +275,14 @@ button {
         margin-left: 20%;
     }
     .num4 {
-        text-align: start;
         margin-left: 40%;
     }
     .num5 {
-        text-align: start;
         margin-left: 20%;
-    }
-    .text {
-        text-align: start;
-        margin: 40px 200px;
     }
     .black {
         color: white;
-        padding-bottom: 40px;
+        padding: 0 40px 40px 40px;
     }
     .less-space {
         padding-top: 0px;
@@ -124,7 +292,7 @@ button {
         text-align: center;
     }
     img {
-        max-width: 1050px;
+        max-width: 900px;
     }
     .btn {
         text-align: center;
@@ -139,7 +307,6 @@ button {
         padding-bottom: 50px;
     }
     .ftr {
-        margin-top: -20px;
         text-align: center;
         padding-top: 20px;
     }
@@ -147,7 +314,17 @@ button {
 
 /* Big Screens */
 @media only screen and (min-width: 2000px) {
-    .table {
+    .section2, 
+    .section4, 
+    .section6, 
+    .section8 {
+        background-color: #2E2E2E;
+        color: white;
+        margin-left: 600px;
+        margin-right: 600px;
+        border-radius: 8px;
+    }
+    .table1{
         background-color: #2E2E2E;
         color: white;
         margin-left: 600px;
@@ -162,9 +339,16 @@ button {
     .vorteile {
         display: flex;
     }
-    .num1,
-    .num2 {
+    .num1, 
+    .num2, 
+    .num3, 
+    .num4, 
+    .num5, 
+    .text, 
+    .black {
         text-align: start;
+    }
+    .num1 {
         margin-left: 300px;
         padding-bottom: 30px;
         font-size: 1rem;
@@ -176,20 +360,18 @@ button {
         margin-left: 150px;
     }
     .num4 {
-        text-align: start;
         margin-left: 430px;
     }
     .num5 {
-        text-align: start;
         margin-left: 200px;
     }
     .text {
-        text-align: start;
-        margin: 40px 600px;
+        margin: 20px 600px;
+        padding: 0 40px 40px 40px;
     }
     .black {
         color: white;
-        padding-bottom: 40px;
+        padding: 0 40px 40px 40px;
     }
     .less-space {
         padding-top: 0px;
@@ -205,6 +387,8 @@ button {
     }
     .btn {
         text-align: center;
+        margin-top: 0;
+        /* outline: 1px solid black; */
     }
     .button {
         padding: 5px 30px;
@@ -216,7 +400,6 @@ button {
         padding-bottom: 50px;
     }
     .ftr {
-        margin-top: -20px;
         text-align: center;
         padding-top: 20px;
     }
