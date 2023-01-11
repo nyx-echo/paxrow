@@ -10,7 +10,9 @@ body {
     margin: 0;
     background-image: url(./images/bg-hero.webp);
 }
-
+a {
+    text-decoration: none;
+}
 /* Max Width 480px */
 
 @media only screen and (max-width: 480px) {
