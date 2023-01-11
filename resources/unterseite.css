@@ -1,5 +1,13 @@
+html {
+    margin: 0;
+}
 .broker-banner {
     background-color: #004387;
+    text-align: center;
+    overflow: hidden;
+}
+.am-broker-banner {
+    background-color: #101F54;
     text-align: center;
     overflow: hidden;
 }
@@ -24,6 +32,9 @@ button {
     .broker-banner {
         background-size: cover;
     }
+    .am-broker-banner {
+        background-size: cover;
+    }
     .pltf, 
     .smaller {
         max-width: 200px !important;
@@ -32,23 +43,13 @@ button {
     img {
         max-height: 100px;
     }
-    #s-scrn {
-        margin-left: 10% !important;
-    }
-    #s-scrn2,
-    #s-scrn6 {
-        margin-left: 15% !important;
-    }
-    .num5 {
-        margin-left: 5% !important;
-    }
-    .num4 {
-        margin-left: 25% !important;
-    }
-    .num8 {
-        margin-left: 20% !important;
-    }
     #inv {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        visibility: hidden;
+    }
+    #am-inv {
         width: 1px;
         height: 1px;
         position: absolute;
@@ -71,6 +72,9 @@ button {
     .broker-banner {
         background-size: cover;
     }
+    .am-broker-banner {
+        background-size: cover;
+    }
     .pltf, 
     .smaller {
         max-width: 300px !important;
@@ -79,23 +83,13 @@ button {
     img {
         max-height: 150px;
     }
-    #s-scrn {
-        margin-left: 10% !important;
-    }
-    #s-scrn2,
-    #s-scrn6 {
-        margin-left: 15% !important;
-    }
-    .num5 {
-        margin-left: 5% !important;
-    }
-    .num4 {
-        margin-left: 25% !important;
-    }
-    .num8 {
-        margin-left: 20% !important;
-    }
-    #inv {
+    /* #inv {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        visibility: hidden;
+    } */
+    #am-inv {
         width: 1px;
         height: 1px;
         position: absolute;
@@ -108,8 +102,31 @@ button {
         margin-bottom: 0;
     }
 }
-@media only screen and (min-width: 426px) {
+@media only screen and (max-width: 584px) {
+    #inv {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 585px) {
     #inv1 {
+        font-size: 1px;
+        position: absolute;
+        display: none;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 1400px) {
+    #am-inv {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 1401px) {
+    #am-inv1 {
         width: 1px;
         height: 1px;
         position: absolute;
@@ -123,21 +140,11 @@ button {
     .broker-banner {
         background-size: cover;
     }
+    .am-broker-banner {
+        background-size: cover;
+    }
     img {
         max-height: 200px;
-    }
-    #s-scrn {
-        margin-left: 10% !important;
-    }
-    #s-scrn2,
-    #s-scrn6 {
-        margin-left: 15% !important;
-    }
-    .num5 {
-        margin-left: 5% !important;
-    }
-    .num4 {
-        margin-left: 35% !important;
     }
     .pltf, 
     .smaller {
@@ -146,19 +153,6 @@ button {
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
-    #s-scrn {
-        margin-left: 15% !important;
-    }
-    #s-scrn2,
-    #s-scrn6 {
-        margin-left: 20% !important;
-    }
-    .num5 {
-        margin-left: 5% !important;
-    }
-    .num4 {
-        margin-left: 35% !important;
-    }
     .pltf, 
     .smaller {
         max-width: 600px;
@@ -181,12 +175,6 @@ button {
         margin: 0 0;
         padding: 10px 40px;
     }
-    #s-scrn {
-        margin-left: 25%;
-    }
-    #s-scrn2 {
-        margin-left: 25%;
-    }
     .pltf, 
     .smaller {
         max-width: 600px;
@@ -194,23 +182,11 @@ button {
     }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1139px) {
-    #s-scrn {
-        margin-left: 15%;
-    }
-    #s-scrn2 {
-        margin-left: 20%;
-    }
     .pltf {
         max-width: 600px;
     }
 }
 @media only screen and (min-width: 1140px) and (max-width: 1339px) {
-    #s-scrn {
-        margin-left: 25%;
-    }
-    #s-scrn2 {
-        margin-left: 25%;
-    }
     #table {
         margin-left: 10%;
         margin-right: 10%;
@@ -251,34 +227,26 @@ button {
     }
     .vorteile {
         display: flex;
+        justify-content: center;
+    }
+    .num1, 
+    .num2, 
+    .num3, 
+    .num4, 
+    .num5,
+    .num8, 
+    .text, 
+    .black {
+        text-align: start;
     }
     .num1, 
     .num2, 
     .num3, 
     .num4, 
     .num5, 
-    .text, 
-    .black {
-        text-align: start;
-    }
-    .num1 {
-        margin-left: 30%;
-        padding-bottom: 30px;
+    .num8 {
+        padding: 0 20px 30px 20px;
         font-size: 1rem;
-    }
-    .num2 {
-        margin-left: 10%;
-        padding-bottom: 30px;
-        font-size: 1rem;
-    }
-    .num3 {
-        margin-left: 20%;
-    }
-    .num4 {
-        margin-left: 40%;
-    }
-    .num5 {
-        margin-left: 20%;
     }
     .black {
         color: white;
@@ -317,14 +285,8 @@ button {
     .section2, 
     .section4, 
     .section6, 
-    .section8 {
-        background-color: #2E2E2E;
-        color: white;
-        margin-left: 600px;
-        margin-right: 600px;
-        border-radius: 8px;
-    }
-    .table1{
+    .section8, 
+    .table1 {
         background-color: #2E2E2E;
         color: white;
         margin-left: 600px;
@@ -338,32 +300,27 @@ button {
     }
     .vorteile {
         display: flex;
+        justify-content: center;
+    }
+    .num1, 
+    .num2, 
+    .num3, 
+    .num4, 
+    .num5,
+    .num8, 
+    .text, 
+    .black {
+        text-align: start;
     }
     .num1, 
     .num2, 
     .num3, 
     .num4, 
     .num5, 
-    .text, 
-    .black {
-        text-align: start;
-    }
-    .num1 {
-        margin-left: 300px;
-        padding-bottom: 30px;
+    .num8 {
+        /* margin-left: 30%; */
+        padding: 0 20px 30px 20px;
         font-size: 1rem;
-    }
-    .num2 {
-        margin-left: 50px;
-    }
-    .num3 {
-        margin-left: 150px;
-    }
-    .num4 {
-        margin-left: 430px;
-    }
-    .num5 {
-        margin-left: 200px;
     }
     .text {
         margin: 20px 600px;
