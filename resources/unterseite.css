@@ -6,8 +6,23 @@ html {
     text-align: center;
     overflow: hidden;
 }
+.etoro-banner {
+    background-color: #0CC635;
+    text-align: center;
+    overflow: hidden;
+}
+.blackbull-banner {
+    background-color: #255EAB;
+    text-align: center;
+    overflow: hidden;
+}
+.xtb-banner {
+    background-color: #E30613;
+    text-align: center;
+    overflow: hidden;
+}
 .am-broker-banner {
-    background-color: #101F54;
+    background-color: #002F5F;
     text-align: center;
     overflow: hidden;
 }
