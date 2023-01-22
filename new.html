@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/quiz.css">
+    <script defer src="./resources/new.js"></script>
+    <title>Finde den perfekten Broker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2aba9e24bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="quiz-container" id="quiz">
+    <div id="quiz-header" class="quiz-header hide">
+        <div id="q1" class="hide">
+            <h2 id="question1">Was möchtest du handeln?</h2>
+            <form action="">
+                <fieldset>
+                    <ul id="answers1">
+                        <li>
+                            <input type="checkbox" name="answer" value="1" id="q1_a_text" class="answer btn kick">
+                            <label for="a" id="q1a" id="q1_a_text">Kryptowährungen (z.B. Bitcoin, Ethereum)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="answer" value="2" id="q1_b_text"class="answer btn">
+                            <label for="b" id="q1b">Forex / Klassische Währungen (z.B. Euro, US-Dollar)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="answer" value="3" id="q1_c_text" class="answer btn">
+                            <label for="c" id="q1c">Rohstoffe (z.B. Öl, Gold)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="answer" value="4" id="q1_d_text" class="answer btn">
+                            <label for="d" id="q1d">Aktien (z.B. Apple, Tesla)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="answer" value="5" id="q1_e_text" class="answer btn">
+                            <label for="e" id="q1e">Ich möchte alles handeln</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div id="q2" class="question2 hide">
+            <h2 id="question2">Ist dir ein Kostenloses Demokonto wichtig?</h2>
+            <form action="">
+                <fieldset>
+                    <ul id="answers2">
+                        <li>
+                            <input type="radio" name="answer" value="1" id="q2_a_text" class="answer2 btn">
+                            <label for="a" id="q2a">Ja</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="2" id="q2_b_text" class="answer2 btn">
+                            <label for="b" id="q2b">Nein</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div id="q3" class="question3 hide">
+            <h2 id="question3"><span class="tooltip"><p class="tooltiptext">„Was ist ein Hebel? In fast jedem Konto der Broker bekommst du einen Hebel, der dir es ermöglicht größere Summen zu handeln, was mehr mögliche Gewinne oder Verluste bedeuten kann”</p><i class="fa-solid fa-circle-info"></i></span> Ist dir ein hoher Hebel wichtig?</h2>
+            <form action="">
+                <fieldset>
+                    <ul id="answers3">
+                        <li>
+                            <input type="radio" name="answer" value="1" id="q3_a_text" class="answer btn">
+                            <label for="a" id="q3a">Ja ich möchte den Größtmöglichen Hebel</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="2" id="q3_b_text" class="answer btn">
+                            <label for="b" id="q3b" >Nein der Hebel ist mir nicht wichtig</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div id="q4" class="question4 hide">
+            <h2 id="question4"><span class="tooltip"><p class="tooltiptext">„Wieso Fragen wir das? Einige Broker haben Mindesteinzahlungsbeträge, mit dieser Frage können wir Broker ausschließen, die eine zu hohe Mindesteinzahlung haben und so können wir dir Broker auflisten, die für dich in Frage kommen“</p><i class="fa-solid fa-circle-info"></i></span> Mit wie viel Kapital möchtest du Starten?</h2>
+            <form action="">
+                <fieldset>
+                    <ul id="answers4">
+                        <li>
+                            <input type="radio" name="answer" value="1" id="q4_a_text" class="answer btn">
+                            <label for="a" id="q4a">Weniger als 200€</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="2" id="q4_b_text" class="answer btn">
+                            <label for="b" id="q4b">200-500€</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="3" id="q4_c_text" class="answer btn">
+                            <label for="c" id="q4c">500-1200€</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="4" id="q4_d_text" class="answer btn">
+                            <label for="d" id="q4d">1200-3000€</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="5" id="q4_e_text" class="answer btn">
+                            <label for="e" id="q4e">Mehr als 5000€</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div id="q5" class="question5 hide">
+            <h2 id="question5">Ist dir ein Deutscher Kundensupport wichtig?</h2>
+            <form action="">
+                <fieldset>
+                    <ul id="answers5">
+                        <li>
+                            <input type="radio" name="answer" value="1" id="q5_a_text" class="answer btn">
+                            <label for="a" id="q5a">Ja</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="2" id="q5_b_text" class="answer btn">
+                            <label for="b" id="q5b">Nein</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div id="q6" class="question6 hide">
+            <h2 id="question6">Bevorzugst du eine App zu haben um immer und überall zugriff auf dein Konto zu haben?</h2>
+            <form action="">
+                <fieldset>
+                    <ul id="answers6">
+                        <li>
+                            <input type="radio" name="answer" value="1" id="q6_a_text" class="answer btn">
+                            <label for="a" id="q6a">Ja ich möchte eine App haben</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="2" id="q6_b_text" class="answer btn">
+                            <label for="b" id="q6b">Nein, mir reicht eine Desktop Version</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div id="q7" class="question7 hide">
+            <h2 id="question7"><span class="tooltip"><p class="tooltiptext">„In dem Fall das irgendetwas mit den Kundengeldern passiert sind Broker durch Einlagensicherungsfonds abgedeckt, die nachfolgende Summe ist die Summe die Maximal pro Kunde abgedeckt ist”</p><i class="fa-solid fa-circle-info"></i></span> Bis zu welcher Summe Soll dein Geld zu 100% abgesichert sein?(Einlagensicherung)</h2>
+            <form action="">
+                <fieldset>
+                    <ul id="answers7">
+                        <li>
+                            <input type="radio" name="answer" value="1" id="q7_a_text" class="answer btn">
+                            <label for="a" id="q7a">Bis zu 3000€</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="2" id="q7_b_text" class="answer btn">
+                            <label for="b" id="q7b">Bis zu 20.000€</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" value="3" id="q7_c_text" class="answer btn">
+                            <label for="c" id="q7c">Bis zu 100.000€</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="start-quiz">
+        <p id="start-quiz">"In 3 Minuten den perfekten Broker für dich finden. Antworte einfach auf die nachfolgenden Fragen (3 Min) und erhalte direkt dein persönliches Ergebnis."</p>
+    </div>
+    <div class="controls">
+        <button id="start">Start</button>
+        <button id="submit1" class="hide">Submit</button>
+        <button id="submit2" class="hide">Submit</button>
+        <button id="submit3" class="hide">Submit</button>
+        <button id="submit4" class="hide">Submit</button>
+        <button id="submit5" class="hide">Submit</button>
+        <button id="submit6" class="hide">Submit</button>
+        <button id="submit7" class="hide">Submit</button>
+        <div class="error">
+            <h6 id="error1" class="hide">Wähle mindestens eine Option aus</h6>
+            <h6 id="error2" class="hide">Wähle eine Option aus</h6>
+        </div>
+    </div>
+    <!-- <div class="loader hide">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+      </div> -->
+    <div class="texts">
+        <div id="blackbull-500" class="hide">
+                <h3>BlackBull Markets</h3>
+                <p>Basierend auf deinen Antworten ist der Broker der am besten zu dir passt Blackbull Markets.<br><br>
+                    Blackbull Markets bietet einen sehr hohen Hebel an (auch für Kleinanleger.) Blackbull Markets bietet die Handelsinstrumente an die dir wichtig since. Allerdings is Blackbull Markets hauptsächlich auf den Devisen/Forex Markt spezialisiert. Daher ist das Handelsangebot nicht das größte.<br> 
+                    Falls dir das egal ist kannst du hier zu Blackbull Markets order mehr über den Broker erfahren.
+                </p>
+                <button class="bb-info">Alle Infos zu BlackBull Markets</button>
+                <button>Jetzt mit BlackBull Markets handeln</button>
+                <h3>PLUS500</h3>
+                <p>Als zwetiwahl passt Plus500 auch gut zu deinen Wünschen.<br><br>
+                    Plus500 hat im Vergleich zu Blackbull Markets 1:500 Hebel nur einen Hebel von 1:30 für Kleinanleger, dafür aber ein breites Handelsangebot in allen Handelsinstrumenten wie Devisen/Forex, Kryptowährungen, Rohstoffe oder Aktien. Außerdem steht bei Plus500 ein deutscher Kundersupport zur Verfügung der 24/7 erreichbar ist.                
+                </p>
+                <button class="bb-info">Alle Infos zu Plus500</button>
+                <button>Jetzt mit Plus500 handeln</button>
+        </div>
+        <div id="admiral" class="hide">
+            <h3>Admiral Markets</h3>
+            <p>Wir haben deine Antworten ausgewertet und der Broker, der am besten zu dir passt, ist Admiral Markets.<br><br>
+                Admiral Markets hat eines der breites Handelsangebote unter allen Brokern. Über 8000 Handelsinstrumente in allen üblichen Märkten, wie zum Beispiel dem Forex Markt, Kryptowährungen, Rohstoffe oder Aktien. Auch Admiral Markets bietet ein kostenloses Demokonto und einen deutschen Kundensupport an und hat eine Einlagensicherung, die bis zu 100.000€ greift. Da du angegeben hast mit einer größeren Summe starten zu wollen ist es ein wichtiger Punkt, dass dein Gesamtes Kapital geschützt ist, mit bis zu 100.000€ bietet dir Admiral Markets mit den höchsten Schutz in der Branche.
+            </p>
+            <ul>
+                <li>Über 8000 Handelsinstrumente</li>
+                <li>Broker des Jahres 2021 & 2022</li>
+                <li>Einlagensicherung bis 100.000€</li>
+            </ul>
+            <button class="bb-info">Alle Infos zu Admiral Markets</button>
+            <button>Jetzt mit Admiral Markets handeln</button>
+        </div>
+        <div id="plus500" class="hide">
+            <h3>Plus 500</h3>
+            <p>Wir haben deine Antworten ausgewertet und der Broker, der am besten zu dir passt, ist Plus500.<br><br>
+                Plus500 hat ein breites Handelsangebot in allen üblichen Märkten, wie zum Beispiel dem Forex Markt, Kryptowährungen, Rohstoffe oder Aktien. Zusätzlich zu dem breiten Handelsangebot hat Plus500 eine eigene Handelsplattform, die auf allen Gerät nutzbar ist und auf der man die Möglichkeit hat mit einem kostenlosen Demokonto zu starten. Bei Fragen steht dir jederzeit (24/7) der deutsche Kundensupport zur Verfügung.                
+            </p>
+            <ul>
+                <li>Über 2800 Handelsinstrumente/li>
+                <li>Max Hebel 1:30</li>
+                <li>Auch für kleines Startkapital geeignet</li>
+            </ul>
+            <button class="bb-info">Alle Infos zu Plus500</button>
+            <button>Jetzt mit Plus500 handeln</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
