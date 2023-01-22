@@ -18,6 +18,9 @@ a {
 @media only screen and (max-width: 480px) {
 
     /* Logo Section */
+    * {
+        font-size: 12px;
+    }
 
     .logo-container {
         background-color: black;
@@ -216,6 +219,7 @@ a {
         /* grid-row-start: 9;
         grid-column: 7 / 10; */
         margin-bottom: 50px;
+        padding: 5px 10px;
         padding-left: 10px;
         padding-right: 10px;
         height: 40px;
@@ -377,6 +381,7 @@ a {
         /* grid-row-start: 9;
         grid-column: 7 / 10; */
         margin-bottom: 50px;
+        padding-top: 5px;
         padding-left: 20px;
         padding-right: 20px;
         height: 40px;
@@ -582,6 +587,7 @@ a {
     .button {
         grid-row-start: 9;
         grid-column: 7 / 10;
+        padding-top: 10px;
         max-height: 50px;
         font-size: 25px;
         border-radius: 15px;
