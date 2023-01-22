@@ -170,12 +170,12 @@ startButton.addEventListener('click', startGame)
 function checkAnswers() {
     if(saveAnswer1() === saveAnswer2() && document.querySelector('#q4_e_text').checked !== true) {
         document.getElementById('blackbull-500').classList.remove('hide')
-        document.getElementById('quiz').style.height = "80%";
-        document.getElementById('quiz').style.width = "80%";
+        // document.getElementById('quiz').style.height = "80%";
+        // document.getElementById('quiz').style.width = "80%";
     }
     else if(saveAnswer1() === saveAnswer2() && document.querySelector('#q4_e_text').checked == true) {
         document.getElementById('blackbull-admiral').classList.remove('hide')
-        document.getElementById('quiz').style.height = "90%";
+        // document.getElementById('quiz').style.height = "90%";
     }
     else if(document.querySelector('#q4_e_text').checked == true) {
         document.getElementById('admiral').classList.remove('hide')
